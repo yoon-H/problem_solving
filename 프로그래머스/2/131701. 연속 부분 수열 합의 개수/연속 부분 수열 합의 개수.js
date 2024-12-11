@@ -3,18 +3,14 @@ function solution(elements) {
     
     let set = new Set();
     const len = elements.length;
-    for(let num = 1 ; num <=len; num++) {
-        
-        for(let i=0; i<len; i++) {
+    for(let i=0; i<len; i++) {
             let sum =0;
             
-            for(let j=i; j<i+num; j++) {
+            for(let j=i; j<i+len; j++) {
                 sum += elements[j%len];
+                set.add(sum);
             }
-            
-            set.add(sum);
         }
-    }
     
     answer = set.size;
     
