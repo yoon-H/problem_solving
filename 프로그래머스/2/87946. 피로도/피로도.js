@@ -7,7 +7,7 @@ function solution(k, dungeons) {
             let arr = [
                 ...dungeons.slice(0, i),
                 ...dungeons.slice(i+1, len)
-                      ] ; 
+            ]; 
             
             const res = solution(k- dungeons[i][1], arr) +1;
             
