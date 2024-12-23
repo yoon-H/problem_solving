@@ -1,6 +1,5 @@
 #include <string>
 #include <vector>
-//#include <iostream>
 
 using namespace std;
 
@@ -13,17 +12,13 @@ bool isEqual(const vector<vector<int>>& board, int x, int y, int size)
     for(int i=x ;i< x+size; i++)
     {
         for(int j=y; j< y+size; j++)
-        {
-            //cout << board[i][j] << ' ';
-            
+        {            
             if(i==x && j==y) prev = board[i][j];
             else 
             {
                 if(prev != board[i][j]) return false;
             }
         }
-        
-        //cout << '\n';
     }
     
     return true;
@@ -44,8 +39,6 @@ void quad(const vector<vector<int>>&board, int x, int y, int size)
         else oneAmount +=1;
         return;
     }
-    
-    //cout << x << ' ' << y << ' ' << size << '\n';
     
     quad(board, x, y, size/2);
     quad(board, x + size/2, y, size/2);
