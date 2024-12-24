@@ -1,10 +1,10 @@
 # [level 2] 택배상자 - 131704 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/131704) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/131704?language=cpp) 
 
 ### 성능 요약
 
-메모리: 81.8 MB, 시간: 125.28 ms
+메모리: 36.5 MB, 시간: 17.21 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 12월 24일 09:48:35
+2024년 12월 24일 09:55:07
 
 ### 문제 설명
 
