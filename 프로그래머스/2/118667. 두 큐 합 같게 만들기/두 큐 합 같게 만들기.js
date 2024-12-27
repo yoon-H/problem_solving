@@ -32,7 +32,6 @@ function solution(queue1, queue2) {
             sum2 -= item;
             index2++;
         }
-
         answer++;
     }
 
