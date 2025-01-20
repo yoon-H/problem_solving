@@ -15,6 +15,7 @@ function search(maps, first, last) {
     queue.push([...first, 0]);
     visited[first[0]][first[1]] = true;
     
+    // 최단 경로 찾기
     while(queue.length !== 0) {
         const x = queue[0][0];
         const y = queue[0][1];
@@ -47,7 +48,8 @@ function solution(maps) {
     var answer = 0;
     
     rows = maps.length;
-    cols = maps[0].length; 
+    cols = maps[0].length;
+    
     // 출구, 시작 위치, 레버 위치 저장
     for(let i=0; i<rows; i++) {
         for(let j=0; j<cols; j++)  {
@@ -65,10 +67,12 @@ function solution(maps) {
         }
     }
     
+    // 시작 지점부터 레버까지
     const res1 = search(maps, start, lever);
     if(res1 === -1) return -1;
     else answer += res1;
     
+    // 레버부터 출구까지
     const res2 = search(maps, lever, exit);
     if(res2 === -1) return -1;
     else answer += res2;
