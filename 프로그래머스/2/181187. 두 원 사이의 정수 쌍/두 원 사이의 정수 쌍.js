@@ -9,11 +9,11 @@ function solution(r1, r2) {
         
         const xPow = i*i;
         
-        const y2 = Math.floor(Math.sqrt(r2Pow - xPow, 2));
+        const y2 = Math.floor(Math.sqrt(r2Pow - xPow));
         
         let y1;
         
-        y1 = Math.ceil(Math.sqrt(r1Pow - xPow, 2));
+        y1 = Math.ceil(Math.sqrt(r1Pow - xPow));
         
         if(i > r1) y1 = 0;
         
